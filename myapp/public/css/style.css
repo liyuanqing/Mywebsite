@@ -290,7 +290,9 @@ p {
     position: absolute !important;
   }
 }
-
+.to-animate{
+  cursor: pointer;
+}
 .js .to-animate,
 .js .to-animate-single {
   opacity: 0;
