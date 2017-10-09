@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>超市</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="https://cgtzfiles.b0.upaiyun.com/cgjr/jrwx/css/style2017.css?v=091311" />
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js" ></script>
+		<script type="text/javascript" src="https://cgtzfiles.b0.upaiyun.com/cgjr/jrwx/js/golist.js" ></script>
+	</head>
+	<body>
+		<div class="container">
+      <!-- 头 -->
+			<div class="top-bar">
+				<div class="top-warp">
+					<h1>超市</h1>
+				</div>
+			</div>
+      <!--  顶部筛选-->
+      <div class="top-menu">
+        <div class="menu-content choose" onclick="choseMenu(0)">
+          <span class="menu-name">新口子<span>
+        </div>
+        <div class="menu-content" onclick="choseMenu('1')">
+          <span class="menu-name">极速贷<span>
+        </div>
+        <div class="menu-content" onclick="choseMenu('2')">
+          <span class="menu-name">大额贷<span>
+        </div>
+      </div>
+      <!-- 产品列表 -->
+      <section class="shop-list">
+        <div class="list-content">
+          <h2 class="list-title">
+            <img class="title-img" src="http://lg-hades.oss-cn-shanghai.aliyuncs.com/logo/1503997299852.png">
+            <p>
+              <span>飞鼠贷</span>
+              <img src='https://cgtzfiles.b0.upaiyun.com/cgjr/jrwx/img/new.png'>
+            </p>
+            <p>全天候下款，分分钟到账</p>
+          </h2>
+          <p class="list-left">
+            <b class="yuan">500~1000<span>元</span></b>
+            <b class="left-name">额度范围</b>
+          </p>
+          <p class="list-right">
+            <b class="yuan">7~14<span>天</span></b>
+            <b class="left-name">借款期限</b>
+            <a onclick="goProvide('https://risk.mo9.com/fastloan/login/loginIndex.do?loanMarket=247&mo9Channel=2',67,'飞鼠贷')">
+              <button class="application">申请贷款</button>
+            </a>
+          </p>
+        </div>
+
+        <div class="list-content">
+          <h2 class="list-title">
+            <img class="title-img" src="http://lg-hades.oss-cn-shanghai.aliyuncs.com/logo/1503039989862.png">
+            <p>
+              <span>钱站</span>
+              <img src='https://cgtzfiles.b0.upaiyun.com/cgjr/jrwx/img/new.png'>
+            </p>
+            <p>随时提现，不看脸色</p>
+          </h2>
+          <p class="list-left">
+            <b class="yuan">1000~10万<span>元</span></b>
+            <b class="left-name">额度范围</b>
+          </p>
+          <p class="list-right">
+            <b class="yuan">3~36<span>月</span></b>
+            <b class="left-name">借款期限</b>
+            <a onclick="goProvide('http://app-h5.iqianzhan.com/sources/outsideRegister.html?qd=jiekdx31',57,'钱站')">
+              <button class="application">申请贷款</button>
+            </a>
+          </p>
+        </div>
+
+        <div class="list-content">
+          <h2 class="list-title">
+            <img class="title-img" src="http://lg-hades.oss-cn-shanghai.aliyuncs.com/logo/1503025552499.png">
+            <p>
+              <span>暖薪贷</span>
+              <img src='https://cgtzfiles.b0.upaiyun.com/cgjr/jrwx/img/new.png'>
+            </p>
+            <p>手机贷款1000元人人有份，无视黑白</p>
+          </h2>
+          <p class="list-left">
+            <b class="yuan">500~1000<span>元</span></b>
+            <b class="left-name">额度范围</b>
+          </p>
+          <p class="list-right">
+            <b class="yuan">7~14<span>天</span></b>
+            <b class="left-name">借款期限</b>
+            <a onclick="goProvide('http://t.5admo.com/to.php?x=428Oo1Z6j7',54,'暖薪贷')">
+              <button class="application">申请贷款</button>
+            </a>
+          </p>
+        </div>
+
+        <div class="list-content">
+          <h2 class="list-title">
+            <img class="title-img" src="http://lg-hades.oss-cn-shanghai.aliyuncs.com/logo/1503025817094.png">
+            <p>
+              <span>信用白条</span>
+              <img src='https://cgtzfiles.b0.upaiyun.com/cgjr/jrwx/img/new.png'>
+            </p>
+            <p>不查征信，体验秒下款的快感</p>
+          </h2>
+          <p class="list-left">
+            <b class="yuan">500~1万<span>元</span></b>
+            <b class="left-name">额度范围</b>
+          </p>
+          <p class="list-right">
+            <b class="yuan">14<span>天</span></b>
+            <b class="left-name">借款期限</b>
+            <a onclick="goProvide('http://t.5admo.com/to.php?x=2WRDQQQOGY',55,'信用白条')">
+              <button class="application">申请贷款</button>
+            </a>
+          </p>
+        </div>
+
+        <div class="list-content">
+          <h2 class="list-title">
+            <img class="title-img" src="http://lg-hades.oss-cn-shanghai.aliyuncs.com/logo/1503279688477.png">
+            <p>
+              <span>零钱庄</span>
+              <img src='https://cgtzfiles.b0.upaiyun.com/cgjr/jrwx/img/new.png'>
+            </p>
+            <p>极速放款，最快5分钟下款</p>
+          </h2>
+          <p class="list-left">
+            <b class="yuan">1000~3000<span>元</span></b>
+            <b class="left-name">额度范围</b>
+          </p>
+          <p class="list-right">
+            <b class="yuan">30<span>天</span></b>
+            <b class="left-name">借款期限</b>
+            <a onclick="goProvide('http://dailingqian.com/login/proxyReg.xhtm?proxyCode=A100161',60,'零钱庄')">
+              <button class="application">申请贷款</button>
+            </a>
+          </p>
+        </div>
+
+
+        <div class="list-content">
+          <h2 class="list-title">
+            <img class="title-img" src="http://lg-hades.oss-cn-shanghai.aliyuncs.com/logo/1504855457878.png">
+            <p>
+              <span>多多花</span>
+              <img src='https://cgtzfiles.b0.upaiyun.com/cgjr/jrwx/img/new.png'>
+            </p>
+            <p>审核简单，放款快</p>
+          </h2>
+          <p class="list-left">
+            <b class="yuan">1000~5000<span>元</span></b>
+            <b class="left-name">额度范围</b>
+          </p>
+          <p class="list-right">
+            <b class="yuan">15<span>天</span></b>
+            <b class="left-name">借款期限</b>
+            <a onclick="goProvide('http://www.jjkswl.com/login/proxyReg.xhtm?proxyCode=A100039',72,'多多花')">
+              <button class="application">申请贷款</button>
+            </a>
+          </p>
+        </div>
+      </section>
+      <section class="shop-list disNone">
+
+      </section>
+      <section class="shop-list disNone">
+
+      </section>
+		</div>
+	</body>
+	<script>
+  var getArgs = function(key){
+    var args = {};
+
+    if(location.search.split('?') <2 ){
+      return null;
+    }
+    var search = location.search.split('?')[1].split('&');
+    search.forEach(function(item){
+      var kv = item.split('=');
+      args[kv[0]] = kv[1];
+    });
+    if(!args[key]) args[key] = '';
+    return args[key];
+  }
+  // 埋点接口
+$.ajax({
+  url:'http://121.41.29.115:8866/api/' + 'spread/insert',
+  // url : 'http://test.caogendangjia.com:8866/api/spread/insert',
+  method : "POST",
+  data:{
+    url:window.location.href,
+    source : "sjd-jqdx-market",
+    type:1,
+  },
+  success:function(res){}
+});
+  //切换tab
+  function choseMenu(num){
+    // tab选中样式切换
+    $(".menu-content").removeClass("choose")
+    $(".menu-content:eq("+num+")").addClass("choose")
+    // 下方session 切换
+    $(".shop-list").addClass("disNone")
+    $(".shop-list:eq("+num+")").removeClass("disNone")
+  }
+  //跳转到具体产品
+  function goProvide(h5Url,loanProviderId,name){
+  // 埋点接口
+  $.ajax({
+    url : "http://121.41.29.115:8866/api" + '/spread/insert',
+    method:"POST",
+    data:{
+      url:window.location.href,
+      source:"sjd-jqdx-market",
+      type:"2",
+      providerId:loanProviderId,
+    },
+    success:function(res){
+      if(loanProviderId=="80"){ //全能借款跳转链接不加参数
+        var  url=h5Url
+      }else if(loanProviderId=="78"){ //米米贷
+        var  url=h5Url
+      }else if(loanProviderId=="46"){ //卡卡贷
+        var  url=h5Url
+      }else{
+        var  url=h5Url+'&loanProviderId='+loanProviderId+"&name="+name
+      }
+        window.location.href=url
+    }
+  });
+}
+
+// 获取列表
+	$.ajax({
+		url:'http://121.41.29.115:8866/api/' + 'loan/providerListForPC',
+		method:"POST",
+		data:{},
+		success:function(res){
+      var data=res.data.data
+      var limitTime="" //贷款期限
+      var src=""        //logo图片
+      var name=""        //产品名称
+      var lendTime=""    //放款时间
+      var interestRateUnit=""  //利率单位
+      var interestRate=""       //利率
+      var money=""      //额度范围
+      var h5Url=""      //h5链接
+      var loanProviderId=""  //产品id
+      var tags=""        //产品标签
+      for(var i=0;i<data.length;i++){
+        loanProviderId=data[i].loanProviderId
+         h5Url=data[i].h5Url
+         src=data[i].logo //logo图片
+         name=data[i].name  //产品名称
+        if(data[i].loanTime==null || data[i].loanTime==""){
+          if(data[i].minDays>=30){
+            data[i].minDays=parseInt(data[i].minDays/30)+"<span>月</span>"
+          }else{
+            data[i].minDays=data[i].minDays+"<span>天</span>"
+          }
+          if(data[i].maxDays>=30){
+            data[i].maxDays=parseInt(data[i].maxDays/30)+"<span>月</span>"
+          }else{
+            data[i].maxDays=data[i].maxDays+"<span>天</span>"
+          }
+         data[i].minDays!=data[i].maxDays?limitTime=data[i].minDays+"~"+data[i].maxDays:limitTime=data[i].minDays //贷款期限
+        }else {
+          var time=data[i].loanTime.split("-")
+          if(time[0]>=30){
+            time[0]=parseInt(time[0]/30)+"<span>月</span>"
+          }else{
+            time[0]=time[0]+"<span>天</span>"
+          }
+          if(time.length!=1){
+            if(time[time.length-1]>=30){
+              time[time.length-1]=parseInt(time[time.length-1]/30)+"<span>月</span>"
+            }else{
+              time[time.length-1]=time[time.length-1]+"<span>天</span>"
+            }
+          }else{
+            time[time.length-1]==""
+          }
+          time[0]!=time[time.length-1]?limitTime=time[0]+"~"+time[time.length-1]:limitTime=time[0]
+        }
+        if(data[i].feeRateType==0){
+          interestRateUnit='日利率'
+        }else if(data[i].feeRateType==1){
+          interestRateUnit='月利率'
+        }
+        interestRate=data[i].feeRate/100+"%"
+
+        if(Math.floor( data[i].lendTime/ (24*3600) )>=1){
+          lendTime=Math.floor( data[i].lendTime/ (24*3600) )+"<span>天</span>"
+        }else if(Math.floor( data[i].lendTime / 3600)>=1){
+          lendTime= Math.floor( data[i].lendTime / 3600)+"小时";
+        }else if(data[i].lendTime/60>=1) {
+          lendTime= Math.floor( data[i].lendTime/60)+"分钟";
+        }else {
+          lendTime= Math.floor( data[i].lendTime)+"秒";
+        }
+
+        if(data[i].minAmount>=10000){
+          data[i].minAmount=data[i].minAmount/10000+"万"
+        }
+        if(data[i].maxAmount>=10000){
+          data[i].maxAmount=data[i].maxAmount/10000+"万"
+        }
+        if(data[i].minAmount==data[i].maxAmount){
+          money=data[i].maxAmount
+        }else{
+          money=data[i].minAmount+"~"+data[i].maxAmount
+        }
+        tags=data[i].tags
+
+        if(data[i].type==1 && loanProviderId!="31"){ //极速贷列表（去除宋江为额贷）
+          var list='<div class="list-content">'+
+            '<h2 class="list-title">'+
+              '<img class="title-img" src="'+src+'">'+
+              '<p>'+
+              ' <span>'+name+'</span>'+
+              '</p>'+
+              '<p>'+tags+'</p>'+
+            '</h2>'+
+            '<p class="list-left">'+
+              '<b class="yuan">'+money+'<span>元</span></b>'+
+              '<b class="left-name">额度范围</b>'+
+            '</p>'+
+            '<p class="list-right">'+
+              '<b class="yuan">'+limitTime+'</b>'+
+              '<b class="left-name">借款期限</b>'+
+              '<a onclick=goProvide("'+$.trim(h5Url)+'",'+loanProviderId+',"'+$.trim(name)+'")>'+
+                '<button class="application">申请贷款</button>'+
+              '</a>'+
+            '</p>'+
+          '</div>'
+          $('.shop-list:eq(1)').append(list)
+        }else if(data[i].type==2){
+          var list2='<div class="list-content">'+
+            '<h2 class="list-title">'+
+              '<img class="title-img" src="'+src+'">'+
+              '<p>'+
+              ' <span>'+name+'</span>'+
+              '</p>'+
+              '<p>'+tags+'</p>'+
+            '</h2>'+
+            '<p class="list-left">'+
+              '<b class="yuan">'+money+'<span>元</span></b>'+
+              '<b class="left-name">额度范围</b>'+
+            '</p>'+
+            '<p class="list-right">'+
+              '<b class="yuan">'+limitTime+'</b>'+
+              '<b class="left-name">借款期限</b>'+
+              '<a onclick=goProvide("'+h5Url+'",'+loanProviderId+',"'+name+'")>'+
+                '<button class="application">申请贷款</button>'+
+              '</a>'+
+            '</p>'+
+          '</div>'
+          $('.shop-list:eq(2)').append(list2)
+        }
+      }
+    }
+	});
+  window.onload=function(){
+      if(!window.android){
+  		$('body').addClass('ios-body').prepend('<span class="ios-div"></span>');
+      }
+  }
+	</script>
+</html>
