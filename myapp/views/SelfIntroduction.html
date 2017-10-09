@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>前端开发丨李元庆</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="HandheldFriendly" content="true">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <style>*{box-sizing:border-box}body{padding:0;margin:0;font-family:Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#606c71}a{color:#1e6bb8;text-decoration:none}a:hover{text-decoration:underline}.btn{display:inline-block;margin-bottom:1rem;color:hsla(0,0%,100%,.7);background-color:hsla(0,0%,100%,.08);border:1px solid hsla(0,0%,100%,.2);border-radius:.3rem;transition:color .2s,background-color .2s,border-color .2s}.btn+.btn{margin-left:1rem}.btn:hover{color:hsla(0,0%,100%,.8);text-decoration:none;background-color:hsla(0,0%,100%,.2);border-color:hsla(0,0%,100%,.3)}@media screen and (min-width:64em){.btn{padding:.75rem 1rem}}@media screen and (min-width:42em) and (max-width:64em){.btn{padding:.6rem .9rem;font-size:.9rem}}@media screen and (max-width:42em){.btn{display:block;width:100%;padding:.75rem;font-size:.9rem}.btn+.btn{margin-top:1rem;margin-left:0}}.main-content :first-child{margin-top:0}.main-content img{max-width:100%}.main-content h1,.main-content h2,.main-content h3,.main-content h4,.main-content h5,.main-content h6{margin-top:2rem;margin-bottom:1rem;font-weight:400;color:#159957}.main-content p{margin-bottom:1em}.main-content code{padding:2px 4px;font-family:Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:.9rem;color:#383e41;background-color:#f3f6fa;border-radius:.3rem}.main-content pre{padding:.8rem;margin-top:0;margin-bottom:1rem;font:1rem Consolas,Liberation Mono,Menlo,Courier,monospace;color:#567482;word-wrap:normal;background-color:#f3f6fa;border:1px solid #dce6f0;border-radius:.3rem}.main-content pre>code{padding:0;margin:0;font-size:.9rem;color:#567482;word-break:normal;white-space:pre;background:transparent;border:0}.main-content .highlight{margin-bottom:1rem}.main-content .highlight pre{margin-bottom:0;word-break:normal}.main-content .highlight pre,.main-content pre{padding:.8rem;overflow:auto;font-size:.9rem;line-height:1.45;border-radius:.3rem}.main-content pre code,.main-content pre tt{display:inline;max-width:none;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.main-content pre code:after,.main-content pre code:before,.main-content pre tt:after,.main-content pre tt:before{content:normal}.main-content ol,.main-content ul{margin-top:0}.main-content blockquote{padding:0 1rem;margin-left:0;color:#819198;border-left:.3rem solid #dce6f0}.main-content blockquote>:first-child{margin-top:0}.main-content blockquote>:last-child{margin-bottom:0}.main-content table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.main-content table th{font-weight:700}.main-content table td,.main-content table th{padding:.5rem 1rem;border:1px solid #e9ebec}.main-content dl{padding:0}.main-content dl dt{padding:0;margin-top:1rem;font-size:1rem;font-weight:700}.main-content dl dd{padding:0;margin-bottom:1rem}.main-content hr{height:2px;padding:0;margin:1rem 0;background-color:#eff0f1;border:0}@media screen and (min-width:64em){.main-content{max-width:64rem;padding:2rem 6rem;margin:0 auto;font-size:1.1rem}}@media screen and (min-width:42em) and (max-width:64em){.main-content{padding:2rem 4rem;font-size:1.1rem}}@media screen and (max-width:42em){.main-content{padding:2rem 1rem;font-size:1rem}}@media print{.page-header{display:none}}@page{size:A4 portrait}.page-header{color:#fff;text-align:center;background-size:600% 600%;animation:bg-generator 10s ease infinite;-webkit-animation:bg-generator 50s ease infinite;transition:-webkit-filter .2s ease,background-image .2s ease;background-image:linear-gradient(223deg,#155799,#e48ba4,#00b4b4,#159957);background-color:#1c81df;position:relative;z-index:1}.page-demo{background-image:linear-gradient(120deg,#155799,#159957)}@media screen and (min-width:64em){.page-header{padding:5rem 6rem}}@media screen and (min-width:42em) and (max-width:64em){.page-header{padding:3rem 4rem}}@media screen and (max-width:42em){.page-header{padding:2rem 1rem}}.project-name{margin-top:0;margin-bottom:.1rem}@media screen and (min-width:64em){.project-name{font-size:3.25rem}}@media screen and (min-width:42em) and (max-width:64em){.project-name{font-size:2.25rem}}@media screen and (max-width:42em){.project-name{font-size:1.75rem}}.project-tagline{margin-bottom:2rem;font-weight:400;opacity:.7}@media screen and (min-width:64em){.project-tagline{font-size:1.25rem}}@media screen and (min-width:42em) and (max-width:64em){.project-tagline{font-size:1.15rem}}@media screen and (max-width:42em){.project-tagline{font-size:1rem}}@keyframes bg-generator{0%{background-position:0 84%}50%{background-position:100% 17%}to{background-position:0 84%}}@-webkit-keyframes bg-generator{0%{background-position:0 84%}50%{background-position:100% 17%}to{background-position:0 84%}}.site-footer{padding-top:2rem;margin-top:2rem;border-top:1px solid #eff0f1}.site-footer-owner{display:block;font-weight:700}.site-footer-credits{color:#819198}@media screen and (min-width:64em){.site-footer{font-size:1rem}}@media screen and (min-width:42em) and (max-width:64em){.site-footer{font-size:1rem}}@media screen and (max-width:42em){.site-footer{font-size:.9rem}}</style>
+</head>
+<body>
+  <section class="page-header">
+    <h1 class="project-name">前端开发丨李元庆</h1>
+    <h2 class="project-tagline">I work hard to contribute my work back to the web, mobile, server &amp;&amp; new Front-end technology.</h2>
+    <a href="https://github.com/liyuanqing" class="btn">GitHub</a>
+  </section>
+  <div id="body" class="main-content">
+    <h2 id="-">前端开发丨李元庆</h2>
+    <ul>
+      <li>24岁丨本科丨两年开发经验丨18845560199丨1069795183@qq.com</li>
+      <li><strong>期望职业</strong>: 前端工程师</li>
+      <li><strong>期望行业</strong>: 互联网 | 移动开发</li>
+    </ul>
+    <hr>
+    <h2 id="-">技术能力</h2
+      ><ul><li>熟练html/css/js等前端开发技术</li>
+        <li>熟练使用React/Jquery,了解Vue 等主流前端框架, 并根据不同的项目进行技术选型。</li>
+        <li>熟练http协议, 能用不同方式处理同源策略, 解决跨域请求等方式</li>
+        <li>熟练使用ajax进行前端开发,并与后端人员一起制定接口规范，联调接口</li>
+        <li>熟练使用git, 进行代码的版本管理</li>
+        <li>熟练使用npm/webpacke, 进行前端环境配置，自动化化开发，包依赖管理等</li>
+        <li>熟悉使用markdown来编写开发文档</li>
+        <li>熟悉使用Nodejs,搭建中间层后端服务器，实现前后端分离，接口转发。</li>
+      </ul>
+      <h2 id="-">我的优势</h2>
+      <ol>
+        <li>具有独立学习能力，关注新技术，并在github从他人项目进行学习，不断完善自身。</li>
+        <li>及时将最新学习成果转化为生产能力，并根据实际情况应用到项目中，全程参与并推动团队从传统的Jquery开发，到Vue，react的技术选型最后选定react开发技术栈</li>
+        <li>致力于成为全栈工程师,实现向大前端的转变(目前正在学习node.js)</li>
+      </ol>
+      <hr>
+      <h2 id="-">工作经历</h2>
+      <p>
+        <strong>2015.10-至今丨杭州筑家易网络科技有限公司丨前端工程师</strong>
+      </p>
+      <ol>
+        <li>前期负责老项目的迭代，维护（经济通，楼掌柜，龙卷风，绿粉汇等项目）。</li>
+        <li>与团队一起推动技术发展，实现从传统前端提供页面到现在前后端分离，目前正致力于实现搭建前端自己的node.js服务器。</li>
+        <li>与UI产品沟通合作，实现前端通用组件的统一化。</li>
+        <li>负责生活家项目组的所有前端产品的开发，维护，迭代。（PC端:邻易联物业官网后台, 邻易联物业系统, 智慧社区运营后台等，手机端：筑家生活，惠家装，筑家易支付宝小程序等）</li>
+        <li>根据项目的需求，开发符合项目需求的组件（react）</li>
+        <li>负责前端脚手架工具的开发优化，优化性能，制定前端的开发流程与部署流程等</li>
+      </ol>
+      <hr>
+      <h2 id="-">项目经验</h2>
+      <h3 id="1-pc-2015-10-2016-5">1. 楼掌柜/ 经济通/ 绿粉汇（PC端端后台与微信端前台）丨 2015.10 - 2016 - 5</h3>
+      <ul>
+        <li>楼盘销售中的客服，驻场等人员用的一款工作管理平台，解决客服与驻场的办公自动化问题</li>
+        <li>负责前端静态页面与动态效果的编写。</li>
+        <li>采用ajax,调取后端接口，实现页面的数据交互，并与后端进行接口联调</li>
+        <li>利用Xshell,ftp等工具进行项目部署</li>
+      </ul>
+      <h3 id="2-isv-2016-8-">2.智慧社区项目（ 智慧社区运营管理后台 / 邻易联物业管理后台 / 升级空间物业管理后台/筑家生活类生活号(isv)/惠家装丨2016.8 - 今</h3>
+      <p><strong>技术标签: react, redux, webpack2, ant-design, postcss, eslint, nodejs</strong></p>
+      <ul>
+        <li>智慧社区是一个大型的平台，包括面向用户的（筑家生活，惠家装生活号），面向公司的（智慧社区运营管理后台 / 邻易联物业管理后台 / 升级空间物业管理后台）</li>
+        <li>制定前端开发计划，根据前端人员，进行项目分配，编写前端开发文档。</li>
+        <li>协助后端出接口方案与接口规范。</li>
+        <li>利用webpack搭建项目，并根据项目编写npm命令,进行项目优化基础库统一打包，路由分割，按需加载等</li>
+        <li>负责前端代码编写，bug fixed，使用ant-design组件库开发系统，根据项目封装相应react组件。</li>
+        <li>与后台进行接口联调，打包，部署项目</li>
+      </ul>
+      <h3 id="3-node-2016-6-">3.node服务器搭建 | 2016.6 - 今</h3>
+      <ul>
+        <li>利用阿里云 ECS 云服务器搭建，使用centos7.2系统</li>
+        <li>在服务前端安装node.js,作为中间层服务器，监听端口，负责简单的接口转发。</li>
+        <li>目前已作出骨架，正在学习node服务器的安全，性能等问题，目的是搭建一个安全可靠高效的node.js服务器。</li>
+      </ul>
+      <hr>
+      <h2 id="-">教育</h2>
+      <ul>
+        <li>2014.9-至今丨Github</li>
+        <li>2012.9-2016.6丨黑龙江大学丨信息管理与信息系统丨本科</li>
+      </ul>
+    </div>
+    <script>
+    !function(e){function __webpack_require__(o){if(r[o])return r[o].exports;var n=r[o]={i:o,l:!1,exports:{}};return e[o].call(n.exports,n,n.exports,__webpack_require__),n.l=!0,n.exports}var r={};__webpack_require__.m=e,__webpack_require__.c=r,__webpack_require__.i=function(e){return e},__webpack_require__.d=function(e,r,o){__webpack_require__.o(e,r)||Object.defineProperty(e,r,{configurable:!1,enumerable:!0,get:o})},__webpack_require__.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return __webpack_require__.d(r,"a",r),r},__webpack_require__.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},__webpack_require__.p="",__webpack_require__(__webpack_require__.s=5)}([function(e,r,o){"use strict";function yhtml5(){console.clear(),console.log("%c liyuaniqng %c https://github.com/liyuaniqng",'font-family: "microsoft yahei", Helvetica, Arial, sans-serif;font-size:64px;color:#00bbee;-webkit-text-fill-color:#00bbee;-webkit-text-stroke: 1px #00bbee;',"font-size:12px;color:#999999;"),console.log("%c We work hard to contribute our work back to the web, mobile, big data, && new Front-End technology.","color:#333;font-size:16px;margin:4px;"),console.log("%c Author: liyuaniqng","color:#333;font-size:16px;margin:4px;")}o.d(r,"a",function(){return yhtml5})},function(e,r){},function(e,r){},function(e,r){},function(e,r){},function(e,r,o){"use strict";throw Object.defineProperty(r,"__esModule",{value:!0}),new Error('Cannot find module "github-markdown-css"')}]);
+    </script>
+</body
+></html>
